@@ -1,0 +1,6 @@
+
+{
+  "envs": {
+    "WORKSPACE_BASE": "/opt/workspace_base"
+  }
+}
