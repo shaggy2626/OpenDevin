@@ -8,6 +8,9 @@ ENV WORKSPACE_MOUNT_PATH=/opt/workspace_base
 # Create workspace directory
 RUN mkdir -p /opt/workspace_base
 
+# Check if user exists and create if not
+RUN id -u enduser &>/dev/null || useradd -u 1000 -m enduser
+
 # Expose the port OpenDevin runs on
 EXPOSE 3000
 
